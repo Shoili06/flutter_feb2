@@ -1,24 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:flutterfeb_2/src/ask_name_screen.dart';
+import 'package:flutter_feb/res/ask_name_screen.dart';
 
-class HomeScreen extends StatefulWidget {
-  @override
-  _HomeScreenState createState() => _HomeScreenState();
-}
-
-class _HomeScreenState extends State<HomeScreen> {
-  String name;
-
+class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
           title: Text("Silver Martian"),
-          backgroundColor: Colors.grey,
+          backgroundColor: Colors.black,
         ),
         body: AskNameScreen(),
       ),
     );
   }
 }
+
