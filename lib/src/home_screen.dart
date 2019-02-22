@@ -13,6 +13,10 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        appBar: AppBar(
+          title: Text("Silver Martian"),
+          backgroundColor: Colors.blueGrey,
+        ),
         body: AskNameScreen(),
       ),
     );
