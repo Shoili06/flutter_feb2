@@ -21,11 +21,11 @@ String page3()=>"Your EVA suit is equipped with a headlamp, which you use to nav
 const String page3_choice1="Refill at ship and explore the rover";
 const String page3_choice2="Continue towards the faint light";
 
-String page4()=>"The rover is covered in dust and most of the solar panels are broken. But you are quite surprised to see the on-board system booted up and running. In fact, there is a message on the screen: \"$name, come to 28.543436, -81.369031.\" Those coordinates aren\'t far, but you don\'t know if your oxygen will last for a trip there and back";
+String page4(String name)=>"The rover is covered in dust and most of the solar panels are broken. But you are quite surprised to see the on-board system booted up and running. In fact, there is a message on the screen: \"$name, come to 28.543436, -81.369031.\" Those coordinates aren\'t far, but you don\'t know if your oxygen will last for a trip there and back";
 const String page4_choice1=">Explore the coordinates";
 const String page4_choice2=">Return to Earth";
 
-String page5()=>">After a long walk slightly uphill, you end up at the top of a small crater. You look around, and are overjoyed to see your favorite android, $name-S1124. It had been lost on a previous mission to Mars! You take it back to your ship and fly back to Earth.";
+String page5(String name)=>">After a long walk slightly uphill, you end up at the top of a small crater. You look around, and are overjoyed to see your favorite android, $name-S1124. It had been lost on a previous mission to Mars! You take it back to your ship and fly back to Earth.";
 
 String page6()=>">You arrive home on Earth. While your mission was a success, you forever wonder what was sending that signal. Perhaps a future mission will be able to investigate";
 String story_image=">Story Image";
