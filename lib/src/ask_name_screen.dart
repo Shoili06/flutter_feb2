@@ -1,6 +1,38 @@
 import 'package:flutter/material.dart';
 
-class AskNameScreen extends StatelessWidget {
+class AskNameScreen extends StatefulWidget {
+
+
+  @override
+  AskNameScreenState createState() {
+    return new AskNameScreenState();
+  }
+}
+
+class AskNameScreenState extends State<AskNameScreen> {
+
+  TextEditingController nameController;
+
+  onStartAdventurePressed(){
+      print(nameController.text);
+  }
+
+
+
+  @override
+  void initState() {
+    super.initState();
+    nameController = TextEditingController();
+  }
+
+
+  @override
+  void dispose() {
+    nameController.dispose();
+    super.dispose();
+  }
+
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -14,6 +46,7 @@ class AskNameScreen extends StatelessWidget {
         children: <Widget>[
           Spacer(),
           TextField(
+            controller: nameController,
             decoration: InputDecoration(
               filled: true,
               fillColor: Colors.white,
@@ -21,7 +54,7 @@ class AskNameScreen extends StatelessWidget {
             ),
           ),
           RaisedButton(
-            onPressed: (){},
+            onPressed: onStartAdventurePressed,
             child: Text("START YOUR ADVENTURE"),
           )
         ],
