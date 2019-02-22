@@ -1,8 +1,4 @@
-const APP_NAME="Signal from mars";
-
-/*<resources>
-<string name="app_name">Signals from Mars</string>
-<string name="key_name">name</string>*/
+import 'package:meta/meta.dart';
 
 
 String page0(String name)=>"On your return trip from studying Saturn/${name} rings, you hear a distress signal that seems to be coming from the surface of Mars. It\'s strange because there hasn\'t been a colony there in years. Even stranger, it\'s calling you by name: \"Help me, $name, you\'re my only hope.\"";
@@ -13,11 +9,11 @@ String page1(String name)=>"You deftly land your ship near where the distress si
 const String page1_choice1="Explore the cave";
 const String page1_choice2="Explore the rover";
 
-String page2()=>"You continue your course to Earth. Two days later, you receive a transmission from HQ saying that they have detected some sort of anomaly on the surface of Mars near an abandoned rover. They ask you to investigate, but ultimately the decision is yours because your mission has already run much longer than planned and supplies are low";
+String page2(String name)=>"You continue your course to Earth. Two days later, you receive a transmission from HQ saying that they have detected some sort of anomaly on the surface of Mars near an abandoned rover. They ask you to investigate, but ultimately the decision is yours because your mission has already run much longer than planned and supplies are low";
 const String page2_choice1 = "Head back to Mars to investigate";
 const String page2_choice2 = "Continue home to Earth</string";
 
-String page3()=>"Your EVA suit is equipped with a headlamp, which you use to navigate the cave. After searching for a while your oxygen levels are starting to get pretty low. You know you should go refill your tank, but there\'s a very faint light up ahead";
+String page3(String name)=>"Your EVA suit is equipped with a headlamp, which you use to navigate the cave. After searching for a while your oxygen levels are starting to get pretty low. You know you should go refill your tank, but there\'s a very faint light up ahead";
 const String page3_choice1="Refill at ship and explore the rover";
 const String page3_choice2="Continue towards the faint light";
 
@@ -27,6 +23,6 @@ const String page4_choice2=">Return to Earth";
 
 String page5(String name)=>">After a long walk slightly uphill, you end up at the top of a small crater. You look around, and are overjoyed to see your favorite android, $name-S1124. It had been lost on a previous mission to Mars! You take it back to your ship and fly back to Earth.";
 
-String page6()=>">You arrive home on Earth. While your mission was a success, you forever wonder what was sending that signal. Perhaps a future mission will be able to investigate";
+String page6(String name)=>">You arrive home on Earth. While your mission was a success, you forever wonder what was sending that signal. Perhaps a future mission will be able to investigate";
 String story_image=">Story Image";
 const String play_again_buttontext=">Play Again!";
