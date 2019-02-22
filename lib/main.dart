@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutterfeb_2/src/home_screen.dart';
 
-void main()=>runApp(MaterialApp(home: HomeScreen(),));
+void main() => runApp(MaterialApp(
+      home: HomeScreen(),
+    ));
 
 //class  extends StatefulWidget {
 //  @override
@@ -14,4 +16,3 @@ void main()=>runApp(MaterialApp(home: HomeScreen(),));
 //    return Container();
 //  }
 //}
-

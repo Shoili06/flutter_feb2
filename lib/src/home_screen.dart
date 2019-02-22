@@ -15,7 +15,7 @@ class _HomeScreenState extends State<HomeScreen> {
       home: Scaffold(
         appBar: AppBar(
           title: Text("Silver Martian"),
-          backgroundColor: Colors.blueGrey,
+          backgroundColor: Colors.grey,
         ),
         body: AskNameScreen(),
       ),
